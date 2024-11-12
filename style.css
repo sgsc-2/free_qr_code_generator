@@ -1,0 +1,150 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+
+
+
+
+/* Stack layout on small screens */
+@media (max-width: 768px) {
+    .container {
+        display: contents
+        flex-direction: ;
+        padding: 15px;
+    }
+
+    .qr-code-options, .qr-code-display {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+.qr-code-options {
+    width: 50%;
+    padding: 20px;
+    border-right: 1px solid #eaeaea;
+}
+
+.qr-code-options h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.qr-code-display {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrcode {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust QR code size on very small screens */
+@media (max-width: 480px) {
+    #qrcode {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.frame-options {
+    display: ;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.frame-options label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.frame-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+#downloadBtn {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #28a745;
+}
+
+#downloadBtn:hover {
+    background-color: #218838;
+}
